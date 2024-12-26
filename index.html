@@ -17,7 +17,9 @@
      <header class="page-header">
       <div class="container header-container">
     <nav class="header-nav">
-      <a class="logo header-logo" href="./index.html">WEB<span class="logo-part">Studio</span></a>
+      <a class="logo header-logo" 
+      href="./index.html">WEB<span class="logo-part"
+      >Studio</span></a>
         <ul class="nav-menu">
           <li class="nav-item"><a class="nav-link link-stud" href="./index.html">Studio</a></li>
           <li class="nav-item"><a class="nav-link" href="">Portfolio</a></li>
@@ -31,7 +33,72 @@
         <li class="adres-item"><a class="adres-link" href="tel:+110001111111">+11 (000) 111-11-11</a></li>
       </ul>
     </address>
+
+    <button class="burger-btn" data-menu-open>
+      <svg class="burger-icon"
+       width="24" height="24">
+      <use href="./images/icons.svg#icon-burger"></use>
+    </svg></button>
      </div>
+
+     <div class="mobile-menu is-open" data-menu>
+      <div class="container mobile-menu-container">
+<button class="mobile-menu-close" data-menu-close><svg 
+  class="menu-btn-ic-close" width="8" height="8">
+  <use href="./images/icons.svg#icon-close"></use></svg></button>
+
+<nav class="mobile-menu-nav">
+  <ul class="mobile-navi-menu">
+    <li class="mobile-nav-item"><a class="mobile-nav-link mobile-link-stud" href="./index.html">Studio</a></li>
+    <li class="mobile-nav-item"><a class="mobile-nav-link" href="">Portfolio</a></li>
+    <li class="mobile-nav-item"><a class="mobile-nav-link" href="">Contacts</a></li>
+  </ul>
+</nav>
+
+<address class="mobile-adres-menu">
+  <ul class="mobile-adres-list">
+    <li class="mobile-adres-item"><a class="mobile-adres-link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+    <li class="mobile-adres-item"><a class="mobile-adres-link" href="tel:+110001111111">+11 (000) 111-11-11</a></li>
+  </ul>
+</address>
+
+<div class="mobile-media"><p class="mobile-sm"></p>
+  <ul class="mobile-icon-menu">
+    <li class="mobile-icon-list">
+      <a href="#" class="mobile-icon-list-link footer-soc-link">
+        <svg class="mobile-list-icons" width="24" height="24">
+        <use href="./images/icons.svg#icon-instagram"></use>
+        </svg>
+      </a>
+    </li>
+    <li class="mobile-icon-list">
+      <a href="#" class="mobile-icon-list-link mobile-soc-link">
+        <svg class="mobile-list-icons" width="24" height="24">
+        <use href="./images/icons.svg#icon-twitter"></use>
+        </svg>
+      </a>
+    </li>
+    <li class="mobile-icon-list">
+      <a href="#" class="mobile-icon-list-link mobile-soc-link">
+        <svg class="mobile-list-icons" width="24" height="24">
+        <use href="./images/icons.svg#icon-facebook"></use>
+        </svg>
+      </a>
+    </li>
+    <li class="mobile-icon-list">
+      <a href="#" class="mobile-icon-list-link mobile-soc-link">
+        <svg class="mobile-list-icons" width="24" height="24">
+        <use href="./images/icons.svg#icon-linkedin"></use>
+        </svg>
+      </a>
+    </li>
+  </ul>
+
+</div>
+      </div>
+
+     </div>
+     
    </header>
   
 <!-- main content -->
@@ -40,7 +107,7 @@
       <section class="section-one">
             <div class="container container-one">
       <h1 class="section-text">Effective Solutions for Your Business</h1>
-      <button type="button" class="button-os">Order Service</button>
+      <button type="button" class="button-os" data-modal-open>Order Service</button>
             </div>
     </section>
 
@@ -104,7 +171,8 @@
       <h2 class="our-team">Our Team</h2>
         <ul class="list-team">
           <li class="item-team">
-            <img src="./images/Mark.jpg" alt="Mark Guerrero" width="264" height="260">
+            <img srcset="./images/mark.jpg 1x, ./images/mark@2x.jpg 2x"
+            src="./images/mark.jpg" alt="Mark Guerrero" width="264" height="260">
     <div class="card-team">          
       <h3 class="team-name">Mark Guerrero</h3>
         <p class="team-txt">Product Designer</p>
@@ -141,7 +209,8 @@
     </div> 
           </li>
           <li class="item-team">  
-            <img src="./images/Tom.jpg" alt="Tom Ford" width="264" height="260">
+            <img srcset="./images/tom.jpg 1x, ./images/tom@2x.jpg 2x"
+            src="./images/tom.jpg" alt="Tom Ford" width="264" height="260">
     <div class="card-team">          
       <h3 class="team-name">Tom Ford</h3>
         <p class="team-txt">Frontend Developer</p>
@@ -178,7 +247,8 @@
     </div>
           </li>
           <li class="item-team"> 
-            <img src="./images/Camila.jpg" alt="Camila Garcia" width="264" height="260">
+            <img srcset="./images/camila.jpg 1x, ./images/camila@2x.jpg 2x"
+            src="./images/camila.jpg" alt="Camila Garcia" width="264" height="260">
     <div class="card-team">
       <h3 class="team-name">Camila Garcia</h3>
         <p class="team-txt">Marketing</p>
@@ -215,7 +285,8 @@
     </div>
           </li>
          <li class="item-team">        
-            <img src="./images/Daniel.jpg" alt="Daniel Wilson" width="264" height="260">
+            <img srcset="./images/daniel.jpg 1x, ./images/daniel@2x.jpg 2x"
+            src="./images/daniel.jpg" alt="Daniel Wilson" width="264" height="260">
     <div class="card-team">           
       <h3 class="team-name">Daniel Wilson</h3>
         <p class="team-txt">UI Designer</p>
@@ -377,8 +448,8 @@
               <input class="footer-sub-input" name="footer-sub" type="email" placeholder="E-mail">
             </label>
             <button class="footer-btn-sub" 
-            type="submit">Subscribe<svg class="svg-sub"
-             width="24" height="24">
+            type="submit">Subscribe<svg
+            class="svg-sub" width="24" height="24">
               <use href="./images/icons.svg#icon-subscribe"></use>
             </svg></button>
           </form>
@@ -389,10 +460,10 @@
 
 <!-- modal window -->
 
-   <div class="backdrop is-open">
+   <div class="backdrop" data-modal>
 
 <div class="modal">
-<button type="button" class="modal-button">
+<button type="button" class="modal-button" data-modal-close>
   <svg class="icon-close" width="8" height="8">
     <use href="./images/icons.svg#icon-close"></use>
   </svg>
@@ -470,5 +541,7 @@
 </form>
 </div>   
 </div>
+<script src="./js/modal.js"></script>
+<script src="./js/menu.js"></script>
   </body>
 </html>
